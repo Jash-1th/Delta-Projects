@@ -1,0 +1,92 @@
+
+    <style>
+        body {
+            background-color: #f4f4f9;
+        }
+
+       
+
+        .navbar {
+            margin-bottom: 30px;
+        }
+
+        .job-search {
+            background-color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-search h2 {
+            margin-bottom: 30px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        
+        .suggestions {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            max-height: 200px;
+            overflow-y: auto;
+            position: absolute;
+            width: 90%;
+            margin-top: 5px;
+            display: none;
+            z-index: 999;
+        }
+
+        .suggestions div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .suggestions div:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Job Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jobportal/index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <% if(!currUser){ %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jobportal/login">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jobportal">Sign Up</a>
+                    </li>
+                    <%}%>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+   
+
+</body>
+
