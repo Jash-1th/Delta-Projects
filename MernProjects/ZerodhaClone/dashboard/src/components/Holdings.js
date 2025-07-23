@@ -6,7 +6,7 @@ import axios from "axios";
 const Holdings = () => {
   const [holdings , setHoldings] = useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3002/holdings", {
+    axios.get("https://zerodha-clone-omtb.onrender.com/holdings", {
       withCredentials: true
     }).then((res)=>{ console.log(res.data);setHoldings(res.data)});
   }, [])
