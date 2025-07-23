@@ -6,7 +6,7 @@ import axios from "axios";
 const Positions = () => {
   const [positions , setPositions]= useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3002/positions", {
+    axios.get("https://zerodha-clone-omtb.onrender.com/positions", {
       withCredentials : true
     }).then((res)=>{console.log(res.data) ; setPositions(res.data)});
   }, []);
